@@ -1,0 +1,17 @@
+name: couchdb
+version: 0.0.1
+inherits:
+type: service
+platform: ubuntu@12.04
+description: wercker box for couchdb, a document oriented database
+keywords:
+  - couchdb
+  - erlang
+  - noqsql
+  - database
+packages:
+  - couchdb
+script:
+env:
+init-script: |
+  
