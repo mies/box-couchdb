@@ -11,7 +11,9 @@ keywords:
   - database
 packages:
   - couchdb
-script: sudo apt-get install couchdb -y
+script: |
+  sudo apt-get update -y
+  sudo apt-get install couchdb -y
 env:
   WERCKER_COUCHDB_PORT: 5984
   WERCKER_COUCHDB_HOST: $$HOST$$
