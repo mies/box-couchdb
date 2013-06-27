@@ -19,4 +19,5 @@ env:
   WERCKER_COUCHDB_HOST: $$HOST$$
   WERCKER_COUCHDB_URL: $$HOST$$:5984
   WERCKER_COUCHDB_VERSION: "1.2.0"
-  
+init-script: |
+  sudo /etc/init.d/couchdb start
