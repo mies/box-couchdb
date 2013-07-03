@@ -1,9 +1,8 @@
 name: couchdb
-version: 0.0.2
-inherits: wercker/ubuntu12.04-webessentials@0.0.3
+version: 0.0.3
 type: service
 platform: ubuntu@12.04
-description: wercker box for couchdb, a document oriented database
+description: wercker box for couchdb a document oriented database
 keywords:
   - couchdb
   - erlang
@@ -12,12 +11,9 @@ keywords:
 packages:
   - couchdb
 script: |
-  sudo apt-get update -y
-  sudo apt-get install couchdb -y
+  sudo chef-solo -c $WERCKER_SOURCE_DIR/solo.rb -j $WERCKER_SOURCE_DIR/solo.json -l debug
 env:
   WERCKER_COUCHDB_PORT: 5984
   WERCKER_COUCHDB_HOST: $$HOST$$
   WERCKER_COUCHDB_URL: $$HOST$$:5984
   WERCKER_COUCHDB_VERSION: "1.2.0"
-init-script: |
-  sudo /etc/init.d/couchdb start
