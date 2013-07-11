@@ -1,5 +1,5 @@
 name: couchdb
-version: 0.0.3
+version: 0.0.4
 inherits: wercker/ubuntu12.04-chef10.18.2@0.0.8
 type: service
 platform: ubuntu@12.04
@@ -10,7 +10,7 @@ keywords:
   - noqsql
   - database
 packages:
-  - couchdb
+  - couchdb@0.0.4
 script: |
   sudo chef-solo -c $WERCKER_SOURCE_DIR/solo.rb -j $WERCKER_SOURCE_DIR/solo.json -l debug
 env:
