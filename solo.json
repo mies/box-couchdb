@@ -1,4 +1,14 @@
 {
+    "apt": {
+        "mirror": "us-east-1.ec2"
+  },
+
+  "run_list": [
+    "recipe[apt]",
+    "recipe[build-essential]",
+    "recipe[couchdb]"
+  ],
+
   "couch_db" : {
     "config" : {
       "httpd" : {
