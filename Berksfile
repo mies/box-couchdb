@@ -1,5 +1,5 @@
 site :opscode
 
-cookbook 'couchdb'
-cookbook 'apt'
 cookbook 'build-essential'
+cookbook 'apt'
+cookbook 'couchdb'
