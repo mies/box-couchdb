@@ -1,6 +1,6 @@
 name: couchdb
 version: 0.1.0
-inherits: mies/erlang
+inherits: mies/erlang@0.0.2
 type: service
 platform: ubuntu@12.04
 description: wercker box for couchdb a document oriented database
