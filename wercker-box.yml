@@ -1,5 +1,5 @@
 name: couchdb
-version: 0.1.1
+version: 0.1.2
 inherits: mies/erlang@0.0.3
 type: service
 platform: ubuntu@12.04
