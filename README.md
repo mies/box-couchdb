@@ -13,3 +13,13 @@ In your wercker.yml file:
 service:
     - mies/couchdb
 ```
+
+You can use these environment variables to connect to a CouchDB instance:
+
+``` bash
+  WERCKER_COUCHDB_PORT # 5984 (default port)
+  WERCKER_COUCHDB_HOST
+  WERCKER_COUCHDB_URL
+```
+
+The convenience url `WERCKER_COUCHDB_URL`, is shaped as `<IP ADDRESS:5984>`
