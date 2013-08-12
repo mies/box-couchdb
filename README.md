@@ -23,3 +23,6 @@ You can use these environment variables to connect to a CouchDB instance:
 ```
 
 The convenience url `WERCKER_COUCHDB_URL`, is shaped as `<IP ADDRESS:5984>`
+
+Check out a sample application that uses this box here:
+https://github.com/mies/getting-started-couchdb
